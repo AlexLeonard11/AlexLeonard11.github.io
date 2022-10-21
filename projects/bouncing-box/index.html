@@ -48,9 +48,9 @@
 
 			// moves the Box to a new position on the screen along the X-Axis
 			function moveBoxTo(newPositionX) {
-				box.css("left", newPositionX);
+				box.css("left", 10);
 			}
-
+            
 			// changes the text displayed on the Box
 			function changeBoxText(newText) {
 				box.text(newText);
@@ -70,10 +70,9 @@
 			turn it around! 
 			*/
 			function update() {
-				
-
-			};
-
+				moveBoxTO(boardWidth);
+               
+			}
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
 			it should increase the points total, increase the speed, and move the box to
